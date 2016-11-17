@@ -15,3 +15,10 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
             baseDir: 'app' // Директория для сервера - app
         },
         notify: false // Отключаем уведомления
+            });
+});
+
+gulp.task('watch', ['browser-sync', 'sass'], function() {
+    gulp.watch('app/sass/**/*.sass', ['sass']); // Наблюдение за sass файлами
+    // Наблюдение за другими типами файлов
+});
