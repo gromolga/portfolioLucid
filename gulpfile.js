@@ -1,13 +1,3 @@
-#run in console
-#start
-npm init;
-npm i gulp --save-dev;
-npm i gulp-sass --save-dev;
-npm i browser-sync --save-dev;
-#stop
-
-#copy to gulpfile.js
-#start
 var gulp      = require('gulp'), // Подключаем Gulp
     sass        = require('gulp-sass'), //Подключаем Sass пакет,
     browserSync = require('browser-sync'); // Подключаем Browser Sync
@@ -25,4 +15,3 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
             baseDir: 'app' // Директория для сервера - app
         },
         notify: false // Отключаем уведомления
-#stop
