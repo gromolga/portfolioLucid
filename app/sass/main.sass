@@ -1,2 +1,337 @@
+$main-color: #008ed6
 body
-	background-color: pink
+	font-family: 'Source Sans Pro', sans-serif
+	margin: 0
+h1
+	margin: 0 0 25px 0
+	font-size: 48px
+	line-height: 1.1em
+	font-weight: 500
+	color: #fff
+h2
+	margin: 15px 0
+	font-size: 36px
+	line-height: 1.1em
+	color: #1a1a1a
+h3
+	font-size: 24px
+	line-height: 1em
+	font-weight: 600
+	color: #1a1a1a
+h4
+	font-size: 14px
+	line-height: 1.1em
+	text-transform: uppercase
+	font-weight: bold
+	color: $main-color
+.inline-block-list
+	ul
+		margin: 0
+		padding: 0
+		font-size: 0
+	li
+		display: inline-block
+		vertical-align: top
+		font-size: 16px
+		line-height: 20px
+	a
+		display: inline-block
+		text-decoration: none
+.clearfix
+	content: ""
+	display: table
+	clear: both
+.container
+	width: 1170px
+	margin: 0 auto
+	padding: 40px 0
+.text-center-header
+	text-align: center
+	margin-bottom: 40px
+.text-left-header
+	text-align: left
+	margin-bottom: 40px
+.leftcol
+	width: 50%
+	float: left
+	padding: 30px 0 0 0
+.rightcol
+	float: left
+	width: 50%
+.basic-text
+	font-size: 18px
+	color: #999999
+.top-header
+	background-color: #15141a
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	.container
+		padding: 0
+	.inline-block-list
+		float: right
+	ul
+		margin-top: 40px
+	li
+		margin: 0 15px 0 15px
+	a
+		color: white
+		font-weight: bold
+	.logo
+		float: left
+		strong
+			display: inline-block
+			text-indent: -9999px
+		a
+			font-size: 20px
+			text-transform: uppercase
+			color: #fff
+.banner
+	background-image: url(../img/banner.jpg)
+	background-repeat: no-repeat
+	background-position: center
+	overflow: hidden
+	-webkit-background-size: cover
+	background-size: cover
+	.container
+		padding: 130px 0 0 0
+	p
+		margin: 0 0 80px 0
+		line-height: 36px
+		font-weight: 600
+.banner-button, .theme-button, .price-button
+	margin: 0 15px 0 0
+	padding: 15px 30px
+	background-color: $main-color
+	border: 1px solid $main-color
+	border-radius: 5px
+	font-size: 14px
+	font-weight: 600
+	color: white
+	text-decoration: none
+	text-transform: uppercase
+.banner-button:hover, .theme-button:hover, .price-button:hover
+	background-color: transparent
+	border: 1px solid #999999
+.price-button
+	border: 1px solid grey
+	background-color: #fff
+	color: $main-color
+	&:hover
+		background-color: $main-color
+		color: #fff
+.image-underline
+	div
+		display: inline-block
+		height: 2px
+		width: 20px
+		border-radius: 1px
+		background-color: $main-color
+.features
+	border-bottom: 1px solid #999999
+.feature-items
+	li
+		display: inline-block
+		width: 22%
+		margin: 0 3% 0 0
+		text-align: center
+		&:nth-child(4n)
+			margin: 0
+	a
+		display: block
+		height: 100px
+		width: 100px
+		margin: 0 auto
+		border: 1px solid #999999
+		border-radius: 50%
+		transition: all .7s ease 0s
+		-webkit-transition: all .7s ease 0s
+		-moz-transition: all .7s ease 0s
+		-o-transition: all .7s ease 0s
+		-ms-transition: all .7s ease 0s
+		&:after
+			font-family: "FontAwesome"
+			font-size: 30px
+			line-height: 100px
+			color: $main-color
+		&:hover
+			background-color: $main-color
+			color: #fff
+			&:after
+				color: #fff
+	.responsive
+		a:after
+			content: "\f108"
+	.castomizable
+		a:after
+			content: "\f013"
+	.design
+		a:after
+			content: "\f09a"
+	.mobile
+		a:after
+			content: "\f10b"
+	h3
+		margin: 20px 0 10px 0
+		font-weight: 500
+	p
+		font-size: 18px
+		color: #999999
+.details
+	.rightcol
+		width: 50%
+		margin: 25px 0 0 0
+	ul
+		margin: 0
+		padding: 0
+	li
+		list-style-type: none
+		font-size: 18px
+		line-height: 1.5
+		color: #1b1b1b
+		&:before
+			display: inline-block
+			height: 20px
+			width: 30px
+			font-family: "FontAwesome"
+			color: $main-color
+	.awesome:before
+			content: "\f091"
+	.responsive:before
+			content: "\f10b"
+	.retina:before
+			content: "\f0e7"
+	.tons:before
+			content: "\f0e4"
+.castomize
+	background-color: rgb(242, 242, 242)
+	.leftcol
+		width: 37%
+.pricing
+	background-image: url(../img/paralax.jpg)
+	-webkit-background-size: 100%
+	background-size: 100%
+	h2
+		color: #fff
+.theme
+	background-color: #000
+	color: #fff
+	.leftcol
+		padding: 0
+		width: 55%
+	p
+		margin: 0
+		font-size: 36px
+		line-height: 1.5
+	.rightcol
+		width: 45%
+	.theme-button
+		float: right
+.price
+	li
+		width: 22%
+		margin: 0 3% 0 0
+		text-align: center
+		border: 1px solid grey
+		&:last-child
+			margin: 0
+	.item-header, .price-value
+		border-bottom: 1px solid grey
+	.item-header
+		padding: 10px 0
+		font-size: 24px
+		line-height: 1
+		text-transform: uppercase
+		&:hover
+			color: $main-color
+.price-value
+	padding: 30px 0 20px 0
+	font-size: 18px
+	color: #999999
+	span
+		position: relative
+		font-size: 60px
+		font-weight: 600
+		color: #000
+		&:before
+			position: absolute
+			content: "$"
+			top: 20px
+			left: -10px
+			font-size: 25px
+	&:hover
+		color: #fff
+		background-color: $main-color
+		span, sup
+			color: #fff
+.price-info
+	padding: 30px 20px
+	p
+		margin: 0 0 30px 0
+		font-size: 18px
+		line-height: 1.4em
+		color: #999999
+		a
+			color: $main-color
+.price-button
+	margin: 0 auto
+.contacts
+	background-color: #ededed
+	padding-bottom: 200px
+	.text-center-header
+		margin: 0 0 30px 0
+	ul
+		text-align: center
+	li
+		width: 14%
+		margin: 0 25% 0 0
+		&:last-child
+			margin: 0
+		&:before
+			font-family: "FontAwesome"
+			font-size: 25px
+			color: $main-color
+	.phone:before
+		content: "\f095"
+	.on-map:before
+		content: "\f041"
+	.mail:before
+		content: "\f003"
+	p
+		font-size: 18px
+		color: #999999
+.footer
+	padding: 30px 0
+	background-color: #15141a
+	color: #444348
+.footer-navigation
+	text-align: center
+	ul
+		padding: 0
+	li
+		width: 3%
+	a:before
+		font-family: "FontAwesome"
+		color: #444348
+	a:hover:before
+		color: $main-color
+	.behance
+		a:before
+			content: "\f1b4"
+	.dribble
+		a:before
+			content: "\f17d"
+	.twitter
+		a:before
+			content: "\f099"
+	.facebook
+		a:before
+			content: "\f09a"
+	.instagram
+		a:before
+			content: "\f099"
+.copyright
+	text-align: center
+	text-transform: uppercase
+	font-weight: 600

@@ -1,0 +1,24 @@
+{
+  "name": "lucid",
+  "version": "1.0.0",
+  "description": "portfolio static page",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gromolga/portfolioLucid"
+  },
+  "author": "GromOlga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gromolga/portfolioLucid/issues"
+  },
+  "homepage": "https://github.com/gromolga/portfolioLucid#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
